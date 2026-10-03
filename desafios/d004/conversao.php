@@ -32,7 +32,9 @@
 
             echo "<p>Seus " . numfmt_format_currency($padrão, $real, "BRL") . " equivalem a <strong>" . numfmt_format_currency($padrão, $dólar, "USD") . "</strong>.</p>";
 
-            echo "<p>* Cotação do dólar obtida diretamente do Banco Central do Brasil</p>";
+            echo "<p>* A cotação do dólar de hoje é <strong>" . numfmt_format_currency($padrão, $cotação, "BRL") . "</strong></p>";
+
+            echo "<p>* Cotação obtida diretamente do Banco Central</p>";
         ?>
         <button onclick="javascript:history.go(-1)">&#x1F504; Voltar</button>
     </main>
