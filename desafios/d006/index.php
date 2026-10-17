@@ -13,7 +13,7 @@
     ?>
     <main>
         <h1 style="text-decoration: underline;">Anatomia de uma Divisão</h1>
-        <form action="" method="get">
+        <form action="<?=$_SERVER['PHP_SELF']?>" method="get">
             <label for="d1">Dividendo</label>
             <input type="number" name="d1" id="d1" min="0" value="<?=$dividendo?>">
             <label for="d2">Divisor</label>

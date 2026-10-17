@@ -13,7 +13,7 @@
     ?>
     <main>
         <h1 style="text-align: center; text-decoration: underline;">Informe o seu salário:</h1>
-        <form action="<?=$_SERVER["PHP_SELF"]?>" method="get">
+        <form action="<?=$_SERVER['PHP_SELF']?>" method="get">
             <label for="sal">Salário</label>
             <input type="number" name="sal" id="sal" value="<?=$sal?>" step="0.01">
             <p>Considerando o salário mínimo de <strong>R$ <?=number_format($salMínimo, 2, ",", ".")?></strong>...</p>
